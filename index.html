@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Maestría Ecológica</title>
+    <link rel="stylesheet" href="styles copy.css">
+</head>
+<body>
+    <!-- Para colocar las cajas del layaout deben flotarse -->
+    <!-- Al flotar las cajas , estas si situaran en diferentes capas, y debemos saber su comportamiento, las cajas flotadas se 
+    veran entre ellas, mientras si las mezclamos con las que no estan flotadas no sedaran cuenta y seguiran un flujo que pueden
+    llegar a superponerse -->
+
+    <!-- El posicionamiento absoluto referencia desde el 0,0
+    El relative desde el 0,0 del padre -->
+
+    <header>
+        <h1>La Maestría Ecológica</h1>
+        <p>Cuidando nuestro planeta y promoviendo la sostenibilidad</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Cursos</a></li>
+            <li><a href="">Blog</a></li>
+            
+        </ul>
+    </nav>
+    <section>
+        <h1>Temperaturas Medias Cada 3 Años</h1>
+    <table>
+        <tr>
+            <th>Año</th>
+            <th>Temperatura Máxima Media (°C)</th>
+            <th>Temperatura Mínima Media (°C)</th>
+        </tr>
+        <tr>
+            <td>2003</td>
+            <td>28.5</td>
+            <td>15.2</td>
+        </tr>
+        <tr>
+            <td>2006</td>
+            <td>29.2</td>
+            <td>15.8</td>
+        </tr>
+        <tr>
+            <td>2009</td>
+            <td>29.7</td>
+            <td>16.2</td>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>30.1</td>
+            <td>16.5</td>
+        </tr>
+        <tr>
+            <td>2015</td>
+            <td>30.4</td>
+            <td>16.9</td>
+        </tr>
+        <tr>
+            <td>2018</td>
+            <td>30.9</td>
+            <td>17.3</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>31.2</td>
+            <td>17.6</td>
+        </tr>
+    </table>
+    </section>
+    <section class="cursos">
+        <h2 id="curso">Nuestros Cursos Destacados</h2>
+        <div class="curso">
+            <h3>Curso de Compras Online Sostenibles</h3>
+            <p>Aprende a hacer compras en línea de manera responsable y sostenible con nuestro curso especializado. Descubre cómo tomar decisiones informadas que beneficien tanto al planeta como a tu bienestar. Algunos de los temas que cubrimos incluyen:</p>
+            <ul>
+                <li>Conciencia ambiental en las compras en línea.</li>
+                <li>Evaluación de la sostenibilidad de productos y proveedores.</li>
+                <li>Reducir la huella de carbono de tus entregas.</li>
+                <li>Compras éticas y apoyo a empresas sostenibles.</li>
+                <li>Reciclaje y reutilización de envases y productos.</li>
+            </ul>
+            <p>Únete a nosotros y haz que tus compras en línea sean una fuerza positiva para el medio ambiente. ¡Juntos podemos marcar la diferencia!</p>
+        </div>
+        <div id="imagen">
+            <img src="img/basura.jpg" alt="">
+        </div>
+        <div class="curso">
+            <h3>Charla: "Compras Online Sostenibles: Tu Poder para Cambiar el Mundo"</h3>
+            <p>¿Quieres aprender a ser un consumidor consciente y contribuir a un mundo más sostenible? Únete a nuestra charla inspiradora sobre "Compras Online Sostenibles". En esta charla, exploraremos:</p>
+            <ul>
+                <li>El impacto ambiental de las compras en línea.</li>
+                <li>Consejos prácticos para tomar decisiones sostenibles.</li>
+                <li>Historias de éxito de personas que han cambiado sus hábitos de compra.</li>
+                <li>Cómo apoyar a empresas comprometidas con la sostenibilidad.</li>
+                <li>El poder de la comunidad en la creación de un futuro más verde.</li>
+            </ul>
+            <p>Esta charla te brindará información valiosa y te motivará a tomar medidas concretas para reducir tu huella ecológica en cada compra en línea. ¡Juntos podemos crear un mundo más sostenible a través de nuestras elecciones de compra!</p>
+        </div>
+    </section>
+    <section>
+    <h2>Formulario de Contacto</h2>
+        <form action="envios.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        
+            <label>Cursos/ Etapa:</label><br><br>
+            <label for="eso">Eso</label>
+            <input type="checkbox" id="eso" name="curso[]" value="eso">
+        
+            <label for="bach">Bachillerato</label>
+            <input type="checkbox" id="bach" name="curso[]" value="bach">
+            
+            <label for="ciclo">Ciclo Formativo</label>
+            <input type="checkbox" id="ciclo" name="curso[]" value="ciclo">
+            <br><br><br>
+        
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 La Maestría Ecológica</p>
+    </footer>
+</body>
+</html>

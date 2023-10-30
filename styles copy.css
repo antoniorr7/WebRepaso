@@ -1,0 +1,242 @@
+/* Estilos generales */
+
+/* Establece el ancho de la página en 1280px para un diseño fijo. */
+html {
+    width: 1280px;
+    margin: 0 auto; /* Centra la página. */
+}
+
+body {
+    background-color: #1e8449;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 0; /* Elimina el relleno predeterminado. */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-image: url(img/pc.png); 
+    background-size: cover; /* Escala la imagen para cubrir el encabezado. */
+    text-align: center;
+    padding: 2.03% 0; /* Agrega relleno superior e inferior al encabezado. */
+    /* Ancho total: 1280 (padding 0 + width 1280 + border 0) */
+}
+nav {
+    width: 100%;
+}
+/* Estilos para la sección principal */
+section {
+    background-color: #4CAF50;
+    padding: 1.56%; /* Agrega relleno alrededor del contenido de la sección. */
+    /* Ancho total: Variable+ padding 20. */
+}
+
+/* Estilos para el pie de página */
+footer {
+    width: 100%; 
+    text-align: center;
+    padding: 2.03% 0; /* Agrega relleno superior e inferior al pie de página. */
+    background-color: #2c3e50;
+    /* Ancho total: 1280 (padding 0 + width 1280 + border 0) */
+}
+
+/* Estilos para el título y párrafo dentro del encabezado */
+header h1, header p {
+    margin:2.03% auto; 
+    background-color: #2c3e50 ;
+    color: rgb(255, 255, 255);
+    width: 30%; 
+    border-radius: 5px 25px 5px 25px;
+    /* Ancho total: 384 (padding 0 + width 384 + border 0) */
+}
+
+/* Estilos para la navegación */
+nav ul {
+    list-style-type: none;
+    background-color: #2c3e50;
+    text-align: center;
+    margin: 0;
+    padding: 1.95%;
+    /* Ancho total: Variable+ padding 25. */
+}
+
+nav li {
+    display: inline;
+    margin-right: 3.91%; 
+    /* Ancho total: Variable*/
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.78% 3.91%;
+    background-color: grey;
+    border-radius: 5px 15px 5px 15px;
+    /* Ancho total: Variable+ padding 10. */
+}
+
+/* Estilos para títulos y tablas dentro de la sección principal */
+section h1, h2 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    padding: 0.79%;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 4px 4px 6px black;
+    /* Ancho total: Variable+ padding 10. */
+}
+
+/* Estilos para tablas */
+table {
+    width: 98.10%;
+    border-collapse: collapse;
+    margin: 1.58% 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    /* Ancho total: 1240 (width 1240 + border 0) */
+}
+
+th, td {
+    padding: 0.79%;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para una imagen */
+#imagen {
+    width: 39.56%; /* Ancho deseado del contenedor */
+    height: 300px; /* Altura deseada del contenedor */
+    overflow: hidden; /* Oculta el contenido que desborde del contenedor */
+    margin: 0 auto;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 5px 35px 5px 35px;
+    /* Ancho total: 500 (width 500) */
+}
+
+#imagen img {
+    width: 100%;
+    height: 300px;
+}
+
+/* Estilos para la clase 'cursos' */
+.cursos {
+    background-color: #f39c12;
+    padding: 5.06%; 
+    background-image: url('img/desierto.png');
+    background-size: cover;
+    background-position: center;
+    /* Ancho total: Variable+ padding 64. */
+}
+
+/* Estilos para la clase 'curso' */
+.curso {
+    background-color: #e67e22;
+    color: #fff;
+    margin: 2.06% 0;
+    padding: 20px; 
+    border-radius: 5px 50px 5px 50px;
+    box-shadow: 10px 10px 10px black;
+    width: 87.03%;
+    /* Ancho total: 1140 (padding 20 + width 1100 + border 0) */
+}
+
+.curso p {
+    margin: 0;
+}
+
+/* Estilos para la clase 'blog' */
+
+/*
+.blog {
+    max-width: 1280px;
+    background-color: #2ecc71;
+    padding: 64px;
+    background-image: url('img/bosque.jpg');
+    background-size: cover;
+    background-position: center;
+/*}
+
+/* Estilos para la clase 'entrada' */
+.entrada {
+    background-color: #27ae60;
+    color: #fff;
+    margin: 2.06% 0;
+    padding: 3.96%;
+    border-radius: 5px;
+    /* Ancho total: Variable+ padding 50. */
+}
+
+/* Estilos para el formulario */
+label {
+    color: #333;
+}
+
+section form {
+    width: 63.29%;
+    margin: 1.98% auto;
+    padding: 3.16%;
+    background-color: rgba(13, 142, 13, 0.5);
+    box-shadow: 6px 6px 4px black;
+    border-radius: 10px;
+    /* Ancho total: 880 (padding 40 + width 800 + border 0) */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 1%;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    /* Ancho total: 800 (width 800) */
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.63%;
+    /* Ancho total: Variable+ margin-right 5. */
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1.25% 1.88%;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    /* Ancho total: Variable+ padding 10. */
+}
+
+input[type="submit"]:hover {
+    background-color: #2774a5;
+}
